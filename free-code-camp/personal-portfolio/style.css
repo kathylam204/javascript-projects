@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed; /* Make the navbar always at the top */
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    z-index: 999;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+    padding: 100px; /* Add padding to account for the fixed navbar */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Projects Section Styles */
+#projects {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.project-tile {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: column; /* Stack navbar links vertically on smaller screens */
+        padding: 10px;
+    }
+
+    #navbar a {
+        margin: 5px 0;
+    }
+}
